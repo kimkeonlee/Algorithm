@@ -1,18 +1,20 @@
-import java.util.Scanner;
-import java.util.HashSet;
+import java.io.*;
 
 public class Main{
     
-    public static void main(String[] args) {
-        
-        Scanner sc = new Scanner(System.in);
-        HashSet<Integer> set = new HashSet<>();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        boolean[] check = new boolean[42];
+        int count = 0;
         
         for(int i = 0; i < 10; i++) {
-            set.add(sc.nextInt() % 42);
+            check[Integer.parseInt(br.readLine()) % 42] = true;
         }
         
-        System.out.println(set.size());
-        sc.close();
+        for(boolean b : check) {
+            if(b) count++;
+        }
+        
+        System.out.println(count);
     }
 }
