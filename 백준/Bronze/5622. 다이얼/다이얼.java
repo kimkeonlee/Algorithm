@@ -18,11 +18,11 @@ public class Main {
         if(c >= 'A' && c <= 'C') return 3;
         if(c >= 'D' && c <= 'F') return 4;
         if(c >= 'G' && c <= 'I') return 5;
-        if (c >= 'J' && c <= 'L') return 6;
-        if (c >= 'M' && c <= 'O') return 7;
-        if (c >= 'P' && c <= 'S') return 8;
-        if (c >= 'T' && c <= 'V') return 9;
-        if (c >= 'W' && c <= 'Z') return 10;
+        if(c >= 'J' && c <= 'L') return 6;
+        if(c >= 'M' && c <= 'O') return 7;
+        if(c >= 'P' && c <= 'S') return 8;
+        if(c >= 'T' && c <= 'V') return 9;
+        if(c >= 'W' && c <= 'Z') return 10;
         return 0;
     }
 }
